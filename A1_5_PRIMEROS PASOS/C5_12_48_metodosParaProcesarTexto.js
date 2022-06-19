@@ -22,7 +22,7 @@ var nombre = "ksjdflkjsakdfjsadlkf{";
 console.log(nombre.length);
 
 //CALCULAR LOS ELEMENTOS DE UN ARRAY
-var array1 = ["perro","gato","elefante","togre","oso"];
+var array1 = ["perro","gato","elefante","tigre","oso"];
 console.log(array1.length);
 
 

@@ -1,4 +1,4 @@
-'use strinct'
+'use strict'
 
 
 function porConsola(num1,num2){
