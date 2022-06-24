@@ -40,4 +40,16 @@ console.log(todosLosDivs);
     
 
 
-//2 CONSEGUIR ELEMENTOS POR SU CLASE ....
+//CLASE 66 CONSEGUIR ELEMENTOS POR SU CLASE  ----------------------
+
+//CONSEGUIR LOS ELEMENTOS POR SU CLASS  DE CSS
+var divRojos = document.getElementsByClassName("rojo");
+console.log(divRojos); //IMPRIME UN ARRAY CON LOS DIVS QUE TIENEN EL NOMBRE DE LA CLASS = ROJO
+divRojos[0].style.background = "red";   //SE PINTA EL DIV CON INDICE 0
+
+//PINTA TODOS LOS DIV ROJOS DE AZUL. SE HACE CON UN IF PARA Q NO SE ERROR
+for(var div in divRojos){
+    if(divRojos[div].className == "rojo"){
+        divRojos[div].style.background = "blue";
+    }
+}
