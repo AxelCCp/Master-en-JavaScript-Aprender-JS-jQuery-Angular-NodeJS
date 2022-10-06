@@ -5,10 +5,10 @@
 $(document).ready(function(){
     console.log("hola 123");
 
-
-
-   //TOOLTIP
-   $(document).tooltip();
-
+   //DIALOG
+  
+    $("#lanzar-popup").click(function(){
+        $("#popup").dialog();
+    });
 
 }); 

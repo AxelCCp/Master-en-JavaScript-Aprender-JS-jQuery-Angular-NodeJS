@@ -13,10 +13,8 @@ console.log(busqueda);
 var texto3 = "Bienvenido al curso de javaScript de ... curso ... Victor Robles";
 console.log(texto3.lastIndexOf("curso"));
 
-
 //OTRO MÉTODO PARA HACER BÚSQUEDAS
 console.log(texto3.search("javaScript")); 
-
 
 //MÉTODO MATCH DEVUELVE UN ARRAY CON LAS PALABRAS
 console.log(texto3.match("Robles"));

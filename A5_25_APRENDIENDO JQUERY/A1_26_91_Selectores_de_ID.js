@@ -22,7 +22,7 @@ $(document).ready(function(){
     var amarillo = $("#amarillo").css("background","yellow")
                                  .css("color","green");
 
-    var amarillo = $("#verde").css("background","green")
+    var verde = $("#verde").css("background","green")
                                  .css("color","blue");
 
 
