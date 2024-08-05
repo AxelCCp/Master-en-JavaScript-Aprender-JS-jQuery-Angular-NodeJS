@@ -20,27 +20,25 @@ body{
     margin: 0px auto;
     margin-top: 30px;
     padding: 20px;
-    background: #EAEDED;
-    box-shadow: 0px 0px 7px gray;
 }
 
 #logo{
+    text-indent: 10px;
     font-family: "Verdana","Arial";
     font-size: 30px;
     letter-spacing: 4px;
     line-height: 75px;
-    background: #82E0AA;
-    color:cornsilk;
-    text-align: center;
-    width: 385px;
+    text-align: left;
+    width: 100%;
     height: 80px;
     float: left;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #menu{
+    border-radius: 10px;
     font-family: Helvetica, Arial;
-    background: #333;
     width: 100%;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -57,13 +55,14 @@ body{
     transition: all 300ms;
 }
 
+/*
 #menu ul, li:hover{
-    background: #82E0AA;
+    background: #3700ce;
 }
+*/
 
 #menu a{
     display: block;
-    color: white;
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
@@ -82,12 +81,10 @@ body{
 
 .post h2{
     font-size: 30px;
-    color: #333;
 }
 
 .post .date{
     display: block;
-    color :gray;
     margin-top: 5px;
 }
 
@@ -99,14 +96,226 @@ body{
 }
 
 .button-more{
+    border-radius: 10px;
     font-size: 14px;
     text-align: center;
     display: block;
     padding: 15px;
-    background: #82E0AA;
-    color: white;
     text-decoration: none;
     margin-top: 10px;
     width: 70px;
     margin-bottom: 20px;
 }
+
+
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+    margin-right: 30px;
+}
+
+#sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 10px;
+}
+
+#sidebar img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+#sidebar p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+/*
+form label{
+    color: #d1d1d1; 
+}
+*/
+
+form input[type=text],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px; 
+    width: 100%;
+}
+
+select {
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px; 
+    width: 103%;
+    border: 1px solid #6b00cf;
+    background-color: #2b2b2b;
+    color: #d1d1d1; 
+}
+
+form input[type="submit"] {
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+#imgfin {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    font-family: Helvetica, Arial;
+    height: 47px;
+    margin:  0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 47px;
+}
+
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;  /*!important: para machacar cualquier stilo q moleste del slider*/
+}
+
+
+#change-theme {
+    margin-left: 10px;
+    position: fixed;
+    top: 4%;
+    background: rgba(51,51,51,0.5);
+    width: 50px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#to-dark,
+#to-purple,
+#to-blue {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(71, 71, 71);
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-dark {
+    background: #242424;
+    border-radius: 50px;
+}
+
+#to-purple {
+    background: #4d016b;
+    border-radius: 50px;
+}
+
+#to-blue {
+    background: #013686;
+    border-radius: 50px;
+}
+
+.subir {
+    color:rgb(244, 96, 96);
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+
+#logout {
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 70px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+#box {
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#box h2 {
+    font-family: Helvetica, Arial;
+    color: #b6b6b6;
+}
+
+#acordeon {
+    margin-top: 15px;
+    color: #b6b6b6;
+    background: #242424;
+}
+
+#acordeon h3 {
+    color: #dadada;
+    background: #505050; 
+    border: 1px solid rgb(197, 63, 63);
+}
+
+#acordeon p {
+    color: #b6b6b6;
+    background: #242424;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+#reloj {
+    font-family: Helvetica, Arial;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 170px;
+    color: rgb(185, 11, 185);
+
+}
+
+#form_contact {
+    width: 80%;
+    margin-top: 15px;
+}
+
+#form_contact label{
+    width: 100%;
+    font-family: Helvetica, Arial;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-error {
+    font-family: Helvetica, Arial;
+    float: right;
+    font-size: 11px;
+    background: rgb(214, 49, 49);
+    color: white;
+    padding: 15px;
+    width: 65%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+

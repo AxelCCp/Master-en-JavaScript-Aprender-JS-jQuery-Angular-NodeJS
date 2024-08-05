@@ -1,6 +1,6 @@
 $(document).ready(function(){
     console.log("hola");
-    $("#datos").load("https://reqres.in");
+     $("#datos").load("https://reqres.in");
     
     //GET Y POST    
 
@@ -23,12 +23,30 @@ $(document).ready(function(){
         web : "asjdsaklsd.com"
     }
 
-    $.post("https://reqres.in/api/users", usuario, function(response){
+    //las 2 sirven
+    //$.post($(this).attr("action"), usuario, function(response){ 
+    /*$.post("https://reqres.in/api/users", usuario, function(response){
         console.log(response);
-    });
+    });*/
 
-    $("#formulario").submit(function(){
-        
+    $("#formulario").submit(function(e){
+        //para q no redirija el formulario.
+        e.preventDefault(); 
+
+        var usuario =
+            {
+                name : $('input[name = "name"]').val(),
+                web : $('input[name = "web"]').val()
+            };
+        console.log(usuario);
+
+        $.post($(this).attr("action"), usuario, function(response){ 
+            console.log(response);
+        }).done(function(){
+            alert('usuario añadido correctamente');
+        });
+        //para q no redirija el formulario.
+        return false;
     });
 
 });

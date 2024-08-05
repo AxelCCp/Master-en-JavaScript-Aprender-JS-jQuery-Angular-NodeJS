@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto JavaScript</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    
+    <link id="theme" rel="stylesheet" type="text/css" href="css/dark.css"/>
+    
+    <!--jquery-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <!--moment js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.min.js"></script>
+  
+    <!--mis js-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+    <div id="change-theme">
+        <div id="to-dark"></div>
+        <div id="to-purple"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+
+        <header>
+            <div id="logo">
+                PROYECTO JS
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="nav1">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reloj.html">Clock</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content">
+
+            <div id="box">
+                <!--cargar reloj-->
+                <div id="reloj">
+
+                </div>
+            </div>
+
+            <aside id="sidebar">
+
+                <div id="about">
+                    <h4>Algún texto ...</h4>
+                    <img src="img/skeletor.jpg">
+                    <p>Vivamus scelerisque venenatis augue, eget commodo tortor tristique in. Fusce non est purus. Aliquam metus elit.</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Login:</span></h4>
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="form_name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="form_email">
+                        
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="form_pass">
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </section>
+        
+
+
+    </section>
+    <footer>
+        My litle app with js jquery, etc. ... &copy;
+        <a href="#" class="subir">Subir</a>
+    </footer>
+</body>
+
+</html>

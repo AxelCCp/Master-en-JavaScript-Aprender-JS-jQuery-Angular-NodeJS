@@ -45,6 +45,18 @@ $(document).ready(function(){
         $(this).removeClass('zebra');
     });
 
+    /*
+    var parrafos = $('p').css("cursor","pointer");
+    parrafos.click(function(){
+        var that = $(this);
+        if(!that.hasClass('grande')){
+            that.addClass('grande');
+        } else {
+            that.removeClass('grande');
+        }
+    });
+    */
+
 
     //SELECTORES DE ATRIBUTOS
     //SELECCIONA TODOS LOS ELEMENTOS CON TITLE GOOGLE
@@ -62,5 +74,8 @@ $(document).ready(function(){
     var busqueda = $('#caja').find('.resaltado');
     console.log(busqueda);
 
+    //BUSQUEDA CON PARENT - con parent retrocedes al elemento html padre.
+    var busqueda2 = $("#elemento2x").parent().parent().find('.resaltado');
+    console.log(busqueda2);
 
 });

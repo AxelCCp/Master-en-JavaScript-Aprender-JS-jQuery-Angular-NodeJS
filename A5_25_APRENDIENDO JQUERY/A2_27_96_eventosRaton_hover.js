@@ -29,6 +29,8 @@ $(document).ready(function(){
     //EVENTOS FOCUS Y BLUR
     var nombre = $("#nombre");
     var datos =  $("#datos");
+
+    //CAMBIA EL COLOR DE LOS BORDES DEL CUADRO DE TEXTO FOCUS - BLUR
     nombre.focus(function(){
         $(this).css("border","2px solid green");
     });
@@ -50,6 +52,8 @@ $(document).ready(function(){
 
     //EVENTOS MOUSE MOVE
     $(document).mousemove(function(){
+        //OCULTA EL CURSOR
+        $('body').css("cursor","none");
         //SE CAPTURAN LAS CORDENADAS POR LAS CUALES PASA EL RATÓN.
         console.log("X = " + event.clientX);
         console.log("Y = " + event.clientY);

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto JavaScript</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    
+    <link id="theme" rel="stylesheet" type="text/css" href="css/dark.css"/>
+    
+    <!--jquery-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <!--jquery ui-->
+    <link rel="stylesheet" href="js/libs/jquery-ui-1.13.2/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="js/libs/jquery-ui-1.13.2/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="js/libs/jquery-ui-1.13.2/jquery-ui.theme.min.css"/>    
+    <script type="text/javascript" src="js/libs/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+    <!--mis js-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    <!-- Plugin validacion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+</head>
+<body>
+
+    <div id="change-theme">
+        <div id="to-dark"></div>
+        <div id="to-purple"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+
+        <header>
+            <div id="logo">
+                PROYECTO JS
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="nav1">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reloj.html">Clock</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content">
+
+            <div id="box">
+              <!--formulario de contacto-->
+              <h2>Contact</h2>
+              <form id="form_contact" method="POST" action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" data-validation="alphanumeric">
+                
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" data-validation="alphanumeric">
+                
+                <label for="email">Email:</label>
+                <input type="text" name="email" data-validation="email">
+                
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" data-validation="required">
+                    <option value="">Select</option>
+                    <option value="woman">Woman</option>
+                    <option value="man">Man</option>
+                </select>
+                
+                <label for="date">Born date:</label>
+                <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+                
+                <label for="age">Age</label>
+                <input type="number" name="age" data-validation="number">
+
+                <input type="submit">
+              </form>
+            </div>
+
+            <aside id="sidebar">
+
+                <div id="about">
+                    <h4>Algún texto ...</h4>
+                    <img src="img/marvelcapcom.jpg">
+                    <p>Vivamus scelerisque venenatis augue, eget commodo tortor tristique in. Fusce non est purus. Aliquam metus elit.</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Login:</span></h4>
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="form_name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="form_email">
+                        
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="form_pass">
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </section>
+        
+
+
+    </section>
+    <footer>
+        My litle app with js jquery, etc. ... &copy;
+        <a href="#" class="subir">Subir</a>
+    </footer>
+</body>
+
+</html>

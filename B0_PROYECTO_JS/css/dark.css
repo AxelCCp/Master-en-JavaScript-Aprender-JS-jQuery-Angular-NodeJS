@@ -1,0 +1,85 @@
+body{
+    background: url('../img/743590.jpg');
+    background-attachment: fixed;
+}
+
+#global{
+    background: #242424;
+    box-shadow: 0px 0px 7px rgb(107, 0, 139);
+    opacity: 0.8;
+}
+
+#logo{
+    background: #37006b;
+    color:rgb(228, 228, 228); 
+}
+
+#menu{
+    background: #333;
+}
+
+#menu ul, li:hover{
+    background: #3700ce;
+}
+
+#menu a{
+    color: rgb(255, 95, 95);
+}
+
+#posts{
+    color: #b6b6b6;
+}
+
+.post h2{
+    color: #d1d1d1;
+}
+
+.post .date{
+    color :gray;
+}
+
+.button-more{
+    background: #2b2b2b;
+    color: rgb(149, 37, 255);
+}
+
+#sidebar h4 {
+    color: #d1d1d1;
+}
+
+#sidebar p {
+    color: #d1d1d1;
+}
+
+form label{
+    color: #d1d1d1; 
+}
+
+form input[type=text],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    border: 1px solid #6b00cf;
+    background-color: #2b2b2b;
+    color: #d1d1d1; 
+}
+
+form input[type="submit"] {
+    background: #2b2b2b;
+    color: rgb(255, 37, 157);
+    border: 1px solid #2b2b2b;
+}
+
+footer {
+    color: #d1d1d1;
+    background: rgba(51, 51, 51, 0.8);
+    box-shadow: 0px 0px 7px rgb(107, 0, 139);
+}
+
+.bx-wrapper, .bx-viewport {
+    background: #242424;
+}
+
+#logout {
+    background: gainsboro;
+}
