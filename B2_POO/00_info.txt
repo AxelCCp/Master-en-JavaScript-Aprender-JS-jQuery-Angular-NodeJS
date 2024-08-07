@@ -1,0 +1,8 @@
+ruta:
+C:\Users\Fanta\Documents\C3_MASTER_JS\B1_39_TYPESCRIPT\js
+
+compilacion:
+tsc file_ts.ts
+
+compilacion automatica:
+tsc -w  *.ts
